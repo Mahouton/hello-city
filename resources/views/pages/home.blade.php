@@ -1,18 +1,10 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Hériter le contenu du template de base base.blade.php-->
+@extends('base')
 
-        <title>Hello city</title>
-    </head>
-    <body>
-       <h1>Hello From Cotonou!</h1>
+ <!-- Donner le contenu de la section content-->
+@section('content')
 
-       <p>It's currently {{ date('H:i')}} </p>
+    <h1>Hello From Cotonou!</h1>
 
-       <footer>
-        <p>&copy; Copyright {{ date('Y')}} &middot; <a href="/about-us">About us</a></p>
-       </footer>
-    </body>
-</html>
+    <p>It's currently {{ date('H:i')}} </p>
+@endsection
