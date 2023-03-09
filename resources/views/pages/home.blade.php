@@ -1,6 +1,8 @@
 <!-- Hériter le contenu du template de base base.blade.php-->
 @extends('base')
 
+@section('title', ' Hello city') <!-- Contenu simple -->
+
  <!-- Donner le contenu de la section content-->
 @section('content')
 

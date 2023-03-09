@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Hello city</title>
+        <!--Default title-->
+        <title>@yield('title', 'Hello city')</title>
     </head>
     <body>
         <!-- Inclure ici le contenu de la section content-->
