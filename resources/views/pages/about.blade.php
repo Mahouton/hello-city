@@ -1,8 +1,6 @@
 @extends('base')
 
-@section('title')
-About Uus | Hello city
-@endsection
+@section('title', 'About Us | '.config('app.name'))
 
 @section('content')
     <p>Make with &hearts; by Mahouton Paul.</p>
