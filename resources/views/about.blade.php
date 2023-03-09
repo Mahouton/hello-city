@@ -4,13 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Hello city</title>
+        <title>About-us | Hello city</title>
     </head>
     <body>
-       <h1>Hello From Cotonou!</h1>
-
-       <p>It's currently {{ date('H:i')}} </p>
-
+       <p>Make with &hearts; by Mahouton Paul.</p>
+        <p><a href="/">Revenir à la page d'acceuil</a></p>
        <footer>
         <p>&copy; Copyright {{ date('Y')}} &middot; <a href="/about-us">About us</a></p>
        </footer>
