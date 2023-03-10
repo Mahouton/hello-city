@@ -6,7 +6,7 @@
  <!-- Donner le contenu de la section content-->
 @section('content')
 
-    <img src="/images/benflag0.jpeg" alt="Benin Flag">
+    <img src="{{asset('/images/benflag0.jpeg')}}" alt="Benin Flag">
 
 
     <h1>Hello From Cotonou!</h1>
