@@ -5,7 +5,7 @@ FROM php:7.4-apache
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR /hello-city
 
 # Install necessary PHP extensions
 RUN apt-get update && apt-get install -y \
