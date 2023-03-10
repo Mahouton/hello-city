@@ -6,10 +6,10 @@
  <!-- Donner le contenu de la section content-->
 @section('content')
 
-    <img src="{{asset('/images/benflag0.jpeg')}}" alt="Benin Flag">
+    <img class="my-5 rounded" src="{{asset('/images/benflag0.jpeg')}}" alt="Benin Flag">
 
 
-    <h1>Hello From Cotonou!</h1>
+    <h1 class="text-primary">Hello From Cotonou!</h1>
 
-    <p>It's currently {{ date('H:i')}} </p>
+    <p class="text-secondary ">It's currently {{ date('H:i')}} </p>
 @endsection

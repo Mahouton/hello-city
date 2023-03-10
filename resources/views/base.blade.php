@@ -6,16 +6,21 @@
 
         <!--Default title-->
         <title>@yield('title', config('app.name'))</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
-    <body>
-        <!-- Inclure ici le contenu de la section content-->
-       @yield('content')
+    <body class="py-3 d-flex flex-column justify-content-between min-vh-100 align-items-center">
+        <main role="main" class="d-flex flex-column align-items-center">
+            
+                <!-- Inclure ici le contenu de la section content-->
+                @yield('content')
+            
+            
+        </main>
         
-      
 
        <footer>
 
-        <p>&copy; Copyright {{ date('Y')}} &middot;
+        <p class="text-muted">&copy; Copyright {{ date('Y')}} &middot;
             
             <!-- Ceci serait afficher uniquement sur le home-->
 
