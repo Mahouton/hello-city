@@ -1,10 +1,8 @@
 <!-- Hériter le contenu du template de base base.blade.php-->
-@extends('base')
-
-@section('title', ' Hello city') <!-- Contenu simple -->
+@extends('base', ["title" => "Home"])
 
  <!-- Donner le contenu de la section content-->
-@section('content')
+@section('content') 
 
     <img class="my-5 rounded" src="{{asset('/images/benflag0.jpeg')}}" alt="Benin Flag">
 

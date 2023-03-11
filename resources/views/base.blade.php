@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!--Default title-->
-        <title>@yield('title', config('app.name'))</title>
+        <title>{{ page_title($title ?? null) }}</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
     <body class="py-3 d-flex flex-column justify-content-between min-vh-100 align-items-center">
@@ -16,18 +16,7 @@
             
             
         </main>
-        
-
-       <footer>
-
-        <p class="text-muted">&copy; Copyright {{ date('Y')}} &middot;
-            
-            <!-- Ceci serait afficher uniquement sur le home-->
-
-            @if(!Route::is('about'))
-            <a href="{{ route('about') }}">About us</a>
-            @endif
-        </p>
-       </footer>
+      
+        @include('partials/footer')
     </body>
 </html>
